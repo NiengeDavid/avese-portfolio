@@ -176,7 +176,7 @@ export const projects = {
       icons: [
         {
           icon: faCcVisa,
-          link: "#",
+          link: "https://selar.co/h7b1",
         },
         {
           icon: faWhatsapp,
@@ -192,7 +192,7 @@ export const projects = {
       icons: [
         {
           icon: faCcVisa,
-          link: "#",
+          link: "https://selar.co/h7b1",
         },
         {
           icon: faWhatsapp,
@@ -208,7 +208,7 @@ export const projects = {
       icons: [
         {
           icon: faCcVisa,
-          link: "#",
+          link: "https://selar.co/h7b1",
         },
         {
           icon: faWhatsapp,

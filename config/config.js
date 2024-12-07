@@ -1,8 +1,7 @@
-import profile from "./profile.png";
+import profile from "./profile.JPG";
 import {
-  faAppStore,
-  faGithub,
-  faGooglePlay,
+  faWhatsapp,
+  faCcVisa,
 } from "@fortawesome/free-brands-svg-icons";
 import {} from "@fortawesome/free-solid-svg-icons";
 
@@ -14,7 +13,7 @@ export const navigation = {
       link: "#about",
     },
     {
-      title: "Projects",
+      title: "Courses",
       link: "#projects",
     },
     {
@@ -24,10 +23,6 @@ export const navigation = {
     {
       title: "Links",
       link: "/links",
-    },
-    {
-      title: "Blog",
-      link: "https://medium.com/@hashirshoaeb",
     },
   ],
 };
@@ -150,11 +145,7 @@ export const education = {
       title: "Bachelor of Science - Computer Science",
       description: null,
       icons: null,
-      scope: [
-        "University of Jos",
-        "Jos, Plateau State, Nigeria",
-        "05.2006",
-      ],
+      scope: ["University of Jos", "Jos, Plateau State, Nigeria", "05.2006"],
     },
   ],
 };
@@ -171,53 +162,57 @@ export const skills = {
     "Teamwork and collaboration",
     "Problem-solving",
     "Time management",
-    "Excellent communication"
-  ]
+    "Excellent communication",
+  ],
 };
 
 export const projects = {
-  title: "Projects",
+  title: "Courses",
   cards: [
     {
-      title: "StarBook",
+      title: "Time Management",
       description:
-        "A digital diary and mood tracking app that helps you in keeping track of your mood and productivity throughout the month/year.",
+        "A 2weeks productivity journey that will leave your life planned and productive throughout the month/year.",
       icons: [
         {
-          icon: faAppStore,
-          link: "https://apps.apple.com/us/app/starbook-journal-ai-diary/id1552418289",
+          icon: faCcVisa,
+          link: "#",
         },
         {
-          icon: faGithub,
-          link: "https://github.com/hashirshoaeb/star_book",
+          icon: faWhatsapp,
+          link: process.env.WhatsappApi || "",
         },
       ],
       scope: null,
     },
     {
-      title: "QuranTalk",
+      title: "Personal Growth",
       description:
-        "An emotional well being and mental health app. The app helps people to navigate their emotions in the light of the Quran.",
+        "A 4weeks Mentorship Programme that will take you from dreaming it to actually doing it.",
       icons: [
         {
-          icon: faAppStore,
-          link: "https://apps.apple.com/us/app/qurantalk/id1563425149",
+          icon: faCcVisa,
+          link: "#",
         },
         {
-          icon: faGooglePlay,
-          link: "https://play.google.com/store/apps/details?id=com.ayahemotion.quran_talk",
+          icon: faWhatsapp,
+          link: process.env.WhatsappApi || "",
         },
       ],
       scope: null,
     },
     {
-      title: "Portfolio",
+      title: "Goal Setting",
       description:
-        "A portfolio website template that helps you showcase your work, projects and skills as a software developer or freelancer.",
+        "Move from doing everything every time and feeling overwhelmed to doing the right things at the right times.",
       icons: [
         {
-          icon: faGithub,
-          link: "https://github.com/hashirshoaeb/portfolio",
+          icon: faCcVisa,
+          link: "#",
+        },
+        {
+          icon: faWhatsapp,
+          link: process.env.WhatsappApi || "",
         },
       ],
       scope: null,
@@ -228,7 +223,7 @@ export const projects = {
 export const contact = {
   title: "Get in touch",
   description:
-    "Coffee Chat! Please do not hesitate to schedule a meeting. Alternatively, feel free to reach out directly by email at Nguavese@gmail.com.",
+    "Coffee Chat! Please do not hesitate to push a DM on WhatsApp. Alternatively, feel free to reach out directly by email at Nguavese@gmail.com.",
   buttons: [
     {
       title: "Email Me",
@@ -236,8 +231,8 @@ export const contact = {
       isPrimary: true,
     },
     {
-      title: "Schedule Meeting",
-      link: "https://topmate.io/hashirshoaeb",
+      title: "DM on WhatsApp",
+      link: process.env.WhatsappApi || "",
       isPrimary: false,
     },
   ],
@@ -259,23 +254,23 @@ export const links = {
   cards: [
     {
       title: "My website",
-      link: "https://hashirshoaeb.com/",
+      link: "https://nguavesetokula.com/",
     },
     {
-      title: "QuranTalk App",
-      link: "https://www.qurantalk.app/",
+      title: "LinkedIn",
+      link: "https://www.linkedin.com/in/avesetokula/",
     },
     {
-      title: "StarBook App",
-      link: "https://starbook.dev/",
+      title: "Facebook",
+      link: "https://www.facebook.com/share/1Arp5t5Q1c/?mibextid=LQQJ4d",
     },
     {
-      title: "My GitHub",
-      link: "https://github.com/hashirshoaeb/",
+      title: "Instagram",
+      link: "https://www.instagram.com/nguavesetokula?igsh=MnpxMnpsbTRuMTV3",
     },
     {
-      title: "My LinkedIn",
-      link: "https://www.linkedin.com/in/hashirshoaeb/",
+      title: "X/Twitter",
+      link: "https://x.com/nguavesetokula?s=21",
     },
   ],
 };

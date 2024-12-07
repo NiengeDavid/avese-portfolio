@@ -1,7 +1,7 @@
 const favicons = require("favicons")
 const fs = require('fs')
 
-const source = "config/profile.png" // Source image(s). `string`, `buffer` or array of `string`
+const source = "config/profile.JPG" // Source image(s). `string`, `buffer` or array of `string`
 
 const configuration = {
   path: "/", // Path for overriding default icons path. `string`

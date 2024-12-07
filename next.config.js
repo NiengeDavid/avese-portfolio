@@ -32,6 +32,9 @@ const nextConfig = {
   publicRuntimeConfig: {
     basePath: basePath,
   },
+  env: {
+    WhatsappApi: process.env.WhatsappApi,
+  },
 }
 
 module.exports = nextConfig

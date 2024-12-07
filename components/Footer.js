@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link'
 
+const currentYear = new Date().getFullYear();
+
 export const Contact = ({ title, description, buttons }) => {
 	return (
 		<div id="contact" className="bg-white py-5 px-5">
@@ -34,12 +36,12 @@ export const Footer = () => {
 	return (
 		<footer className="bg-secondary text-center py-2 px-5">
 			<div className="container text-muted">
-				<small>&copy; 2021 {" "}
-					<Link href="https://github.com/hashirshoaeb">
-						<a>hashirshoaeb</a>
+				<small>&copy; {currentYear} {" "}
+					<Link href="https://www.linkedin.com/in/avesetokula/">
+						<a>avesetokula</a>
 					</Link>
 					. Open sourced with love under {" "}
-					<Link href="https://github.com/hashirshoaeb/portfolio/blob/main/LICENSE">
+					<Link href="https://github.com/NiengeDavid/avese-portfolio/blob/main/LICENSE">
 						<a>MIT</a>
 					</Link>
 					{" "} License

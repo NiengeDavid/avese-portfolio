@@ -19,6 +19,7 @@ export default function Home() {
           {links.cards.map((value, index) => (
             <Button key={index} title={value.title} link={value.link} />
           ))}
+          <Button2 title="Back ➜" link="/" />
         </div>
         <Footer />
       </div>
@@ -33,6 +34,20 @@ function Button({ title, link }) {
       <div className="card card-work mx-sm-4 my-2" style={{ width: "20rem" }}>
         <Link href={link}>
           <a target="_blank" rel="noreferrer">
+            <h4 className="text-primary py-3 px-3">{title}</h4>
+          </a>
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+function Button2({ title, link }) {
+  return (
+    <div className="row justify-content-center">
+      <div className="card card-work mx-sm-4 my-2" style={{ width: "20rem" }}>
+        <Link href={link}>
+          <a>
             <h4 className="text-primary py-3 px-3">{title}</h4>
           </a>
         </Link>

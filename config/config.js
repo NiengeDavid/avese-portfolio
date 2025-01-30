@@ -4,6 +4,7 @@ import {
   faCcVisa,
 } from "@fortawesome/free-brands-svg-icons";
 import {} from "@fortawesome/free-solid-svg-icons";
+//import portfolioDoc from "/aveseportfolio.pdf"
 
 export const navigation = {
   name: "Avese",
@@ -24,6 +25,10 @@ export const navigation = {
       title: "Links",
       link: "/links",
     },
+    {
+      title: "LearnMath",
+      link: "/learnmath",
+    },
   ],
 };
 export const intro = {
@@ -39,7 +44,7 @@ export const intro = {
     },
     {
       title: "Resume",
-      link: "https://docs.google.com/document/d/1OFTCXu54lRxk1I5HlhzIHCnodG1Pspfn8mcyIpl8RDg/edit?usp=sharing",
+      link: "/aveseportfolio.pdf",
       isPrimary: false,
     },
   ],
@@ -170,6 +175,22 @@ export const projects = {
   title: "Courses",
   cards: [
     {
+      title: "LearnMath",
+      description:
+        "Unlock Your Math Potential: Bridge the Gaps and Accelerate Your Success.",
+      icons: [
+        {
+          icon: faCcVisa,
+          link: "/learnmath",
+        },
+        {
+          icon: faWhatsapp,
+          link: process.env.WhatsappApi || "",
+        },
+      ],
+      scope: null,
+    },
+    {
       title: "Time Management",
       description:
         "A 2weeks productivity journey that will leave your life planned and productive throughout the month/year.",
@@ -273,4 +294,49 @@ export const links = {
       link: "https://x.com/nguavesetokula?s=21",
     },
   ],
+};
+
+export const learnMath = {
+  title: "LearnMath",
+  bullet: "Unlock Your Math Potential: Bridge the Gaps and Accelerate Your Success",
+  description: "Did you struggle with math in the past? Do you wish you could go back and fill in the knowledge gaps that have held you back?",
+  cta: "Now's your chance! Our personalized math course is designed to help you:",
+  curriculum: [
+    {
+      title: "Identify and bridge knowledge gaps:",
+      desc: "Take our comprehensive diagnostic test to pinpoint areas where you need improvement.",
+    },
+    {
+      title: "Create a tailored learning plan:",
+      desc: "Receive a customized curriculum that addresses your specific needs and goals.",
+    },
+    {
+      title: "Accelerate your math understanding:",
+      desc: "Build confidence and mastery of key skills, from foundational concepts to advanced techniques.",
+    }
+  ],
+  call: "Join our course and discover a more effective, efficient, and enjoyable way to learn math. Take control of your math education and unlock your full potential!",
+  plans: [
+    {
+      title: "one-time registration",
+      amount: 100,
+      duration: "one-time",
+    },
+    {
+      title: "Monthly subscription",
+      amount: 70,
+      duration: "per month",
+    },
+    {
+      title: "6months subscription",
+      amount: 50,
+      duration: "per month",
+    },
+    {
+      title: "Yearly subscription",
+      amount: 30,
+      duration: "per month",
+    },
+  ],
+  rates: 1680,
 };

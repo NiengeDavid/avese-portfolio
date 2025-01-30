@@ -3,7 +3,7 @@ import { PaystackButton } from "react-paystack";
 import PropTypes from "prop-types"; // For prop type validation
 
 const PaystackPayment = ({ email, amount }) => {
-  const publicKey = process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY;
+  const publicKey = process.env.PAYSTACK_PUBLIC_KEY;
   const [paymentSuccess, setPaymentSuccess] = useState(false);
 
   const onSuccess = (reference) => {

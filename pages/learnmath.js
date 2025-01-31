@@ -228,9 +228,9 @@ const LearnMathPage = () => {
         {/* Success Message */}
         {formSubmitted && (
           <div className="alert alert-success mt-4 text-center">
-            <h4 className="alert-heading">Payment Successful! 🎉</h4>
+            <h4 className="alert-heading">Student details registered! 🎉</h4>
             <p className="mb-0">
-              Course access details have been sent to {formData.email}
+              Proceed to make payment and access the course by choosing any plan above. ({formData.email})
             </p>
           </div>
         )}

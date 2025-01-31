@@ -303,25 +303,25 @@ export const learnMath = {
   cta: "Now's your chance! Our personalized math course is designed to help you:",
   curriculum: [
     {
-      title: "Identify and bridge knowledge gaps:",
+      title: "Identify and bridge knowledge gaps",
       desc: "Take our comprehensive diagnostic test to pinpoint areas where you need improvement.",
     },
     {
-      title: "Create a tailored learning plan:",
+      title: "Create a tailored learning plan",
       desc: "Receive a customized curriculum that addresses your specific needs and goals.",
     },
     {
-      title: "Accelerate your math understanding:",
+      title: "Accelerate your math understanding",
       desc: "Build confidence and mastery of key skills, from foundational concepts to advanced techniques.",
     }
   ],
   call: "Join our course and discover a more effective, efficient, and enjoyable way to learn math. Take control of your math education and unlock your full potential!",
   plans: [
-    {
-      title: "one-time registration",
-      amount: 100,
-      duration: "one-time",
-    },
+    // {
+    //   title: "one-time registration",
+    //   amount: 100,
+    //   duration: "one-time",
+    // },
     {
       title: "Monthly subscription",
       amount: 70,

@@ -1,15 +1,21 @@
 import { useState } from "react";
 import { PaystackButton } from "react-paystack";
 import PropTypes from "prop-types"; // For prop type validation
+import { sendWelcomeEmail } from "../utils/mailgun";
 
-const PaystackPayment = ({ email, amount }) => {
+const PaystackPayment = ({ email, amount, userData }) => {
   const publicKey = process.env.PAYSTACK_PUBLIC_KEY;
   const [paymentSuccess, setPaymentSuccess] = useState(false);
 
-  const onSuccess = (reference) => {
+  const onSuccess = async (reference) => {
     console.log("Payment successful", reference);
+
+    // Send welcome email
+    await sendWelcomeEmail(email, `${userData.firstName} ${userData.lastName}`);
+
     setPaymentSuccess(true);
-    // TODO: Handle post-payment logic (e.g., updating DB, sending emails)
+
+    // TODO: Add any additional post-payment logic here
   };
 
   const onClose = () => {
@@ -31,7 +37,7 @@ const PaystackPayment = ({ email, amount }) => {
         />
       ) : (
         <div className="alert alert-success mt-3" role="alert">
-          Payment Successful!
+          Payment Successful! Check your email for receipt and course access details.
         </div>
       )}
     </div>
@@ -43,6 +49,10 @@ PaystackPayment.propTypes = {
   email: PropTypes.string.isRequired,
   amount: PropTypes.number.isRequired,
   //currency: PropTypes.string.isRequired,
+  userData: PropTypes.shape({
+    firstName: PropTypes.string.isRequired,
+    lastName: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default PaystackPayment;

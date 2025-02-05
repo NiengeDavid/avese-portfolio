@@ -35,6 +35,8 @@ const nextConfig = {
   env: {
     WhatsappApi: process.env.WhatsappApi,
     PAYSTACK_PUBLIC_KEY: process.env.PAYSTACK_PUBLIC_KEY,
+    MAILGUN_API_KEY: process.env.MAILGUN_API_KEY,
+    MAILGUN_DOMAIN: process.env.MAILGUN_DOMAIN,
   },
 };
 

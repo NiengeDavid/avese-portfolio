@@ -55,10 +55,13 @@ const LearnMathPage = () => {
   };
 
   // Get actual amount in cents/kobo for Paystack
-  const getPaymentAmount = (amount) => {
+  const getPaymentAmount = (monthlyAmount, months) => {
+    // Calculate total amount based on subscription duration
+    const totalAmount = monthlyAmount * months;
+
     return currency === "USD"
-      ? Math.round(amount * exchangeRate) * 100
-      : Math.round(amount * exchangeRate) * 100;
+      ? Math.round(totalAmount * exchangeRate) * 100
+      : Math.round(totalAmount * exchangeRate) * 100;
   };
 
   return (
@@ -213,9 +216,14 @@ const LearnMathPage = () => {
                         </span>
                       </div>
                       <PaystackPayment
+                        key={plan.title}
                         email={formData.email}
-                        amount={getPaymentAmount(plan.amount)}
+                        amount={getPaymentAmount(plan.amount, plan.months)}
                         //currency={currency} //Pass currency prop
+                        userData={{
+                          firstName: formData.firstName,
+                          lastName: formData.lastName,
+                        }}
                       />
                     </div>
                   </div>
@@ -230,7 +238,8 @@ const LearnMathPage = () => {
           <div className="alert alert-success mt-4 text-center">
             <h4 className="alert-heading">Student details registered! 🎉</h4>
             <p className="mb-0">
-              Proceed to make payment and access the course by choosing any plan above. ({formData.email})
+              Proceed to make payment and access the course by choosing any plan
+              above. ({formData.email})
             </p>
           </div>
         )}

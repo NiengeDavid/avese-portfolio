@@ -44,7 +44,7 @@ export const intro = {
     },
     {
       title: "Resume",
-      link: "/aveseportfolio.pdf",
+      link: "/aveseportfolioresume.pdf",
       isPrimary: false,
     },
   ],

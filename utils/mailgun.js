@@ -11,13 +11,13 @@ export async function sendWelcomeEmail(userEmail, userName) {
 
   try {
     const data = await mg.messages.create(process.env.MAILGUN_DOMAIN, {
-      from: "Mailgun Sandbox <postmaster@sandboxf7a025f1d9e0427c9ee1da653d54fe08.mailgun.org>",
-      to: ["David N <davidnienge@gmail.com>"],
+      from: "support <support@avesetokula.com>",
+      to: [userEmail],
       subject: "Welcome to Our Course! 🎉",
       template: "Welcome on board",
       "h:X-Mailgun-Variables": JSON.stringify({
-        //name: userName,
-        test: "test",
+        name: userName,
+        //test: "test",
       }),
     });
     console.log(data); // logs response data

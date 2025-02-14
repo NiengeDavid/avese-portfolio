@@ -1,8 +1,5 @@
 import profile from "./profile.JPG";
-import {
-  faWhatsapp,
-  faCcVisa,
-} from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp, faCcVisa } from "@fortawesome/free-brands-svg-icons";
 import {} from "@fortawesome/free-solid-svg-icons";
 //import portfolioDoc from "/aveseportfolio.pdf"
 
@@ -53,9 +50,7 @@ export const intro = {
 export const about = {
   title: "Who I am",
   description: [
-    "Nguavese J. Tokula, the C.E.O of Wellspring Educational Foundation is a Certified Management Consultant and Fellow of the Institute of Management Consultants IMC-Nigeria. She has over the years worked with various establishments including Dangote Communications (Dancom) and specialized in creating and improving systems that spur growth, impact, influence and income. As an intelligent and passionate Educator she created a working curriculum and system that makes for She also ran an International Nursery and Primary School in Gboko, a town situated in the North Central region of Nigeria; a school she started with just their son and grew to currently over 120 children and over 20 staff. With great innovations in education and a technological background she has a vision of raising fearless, godly leaders of tomorrow who for the love of their society want to impact it for the better.",
-    "As an exceptional Maxwell Leadership Coach, Speaker and Trainer, she spends a lot of time training other educators and market place professionals for peak performance. Nguavese understands her God-given purpose in life and she is determined to be a blessing to her generation through Transformational Leadership and Continuous Personal Development.",
-    "She is a graduate of Computer Science with a Certificate in Human Resource Management, a Certificate in Contemporary Global Challenges in Educational Leadership and Policies, and a Masters in Educational Administration and Planning. Nguavese is a Microsoft Certified Educator. As a Certified Administrator of Accelerated Christian Education Curriculum, she has successfully explored Homeschool in the last two years with two of their children. She is happily married to her Sweetheart of 15 years; together they are blessed with 3 wonderful children and reside in Abuja, Nigeria.",
+    "Hello! I'm Nguavese J. Tokula, CEO of Wellspring Educational Foundation. As a certified management consultant, educator, and Maxwell Leadership Coach, I'm passionate about transforming education and empowering leaders. With a background in Computer Science and Educational Administration, I've developed innovative systems and curricula that drive growth and impact. I'm dedicated to raising fearless, godly leaders and committed to continuous personal development. Let's connect!",
   ],
 };
 
@@ -298,8 +293,10 @@ export const links = {
 
 export const learnMath = {
   title: "LearnMath",
-  bullet: "Unlock Your Math Potential: Bridge the Gaps and Accelerate Your Success",
-  description: "Did you struggle with math in the past? Do you wish you could go back and fill in the knowledge gaps that have held you back?",
+  bullet:
+    "Unlock Your Math Potential: Bridge the Gaps and Accelerate Your Success",
+  description:
+    "Did you struggle with math in the past? Do you wish you could go back and fill in the knowledge gaps that have held you back?",
   cta: "Now's your chance! Our personalized math course is designed to help you:",
   curriculum: [
     {
@@ -313,7 +310,7 @@ export const learnMath = {
     {
       title: "Accelerate your math understanding",
       desc: "Build confidence and mastery of key skills, from foundational concepts to advanced techniques.",
-    }
+    },
   ],
   call: "Join our course and discover a more effective, efficient, and enjoyable way to learn math. Take control of your math education and unlock your full potential!",
   plans: [

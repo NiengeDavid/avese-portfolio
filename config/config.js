@@ -270,7 +270,7 @@ export const links = {
   cards: [
     {
       title: "My website",
-      link: "https://nguavesetokula.com/",
+      link: "https://avesetokula.com",
     },
     {
       title: "LinkedIn",

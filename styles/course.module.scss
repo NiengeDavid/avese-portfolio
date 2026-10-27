@@ -1,0 +1,137 @@
+$primary: #365b6d;
+$ink: #1f2d36;
+$muted: #6b7a84;
+$line: #dfe6ea;
+$tint: #eaf2f6;
+$row: #f2f5f7;
+$success: #1f9d63;
+
+.page { color: $ink; background: #fff; min-height: 100vh; }
+
+.topBar {
+  border-bottom: 1px solid $line;
+  padding: 0.9rem 0;
+}
+.brand { font-weight: 700; color: $primary; text-decoration: none; }
+.backLink { color: $muted; text-decoration: none; font-size: 0.9rem; }
+.backLink:hover { color: $primary; }
+
+.heroBanner {
+  background: $tint;
+  border-radius: 20px;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  margin: 1.5rem 0 2.5rem;
+}
+.heroTitle { font-size: clamp(1.75rem, 4vw, 2.75rem); font-weight: 700; margin-bottom: 0.75rem; }
+.heroSub { color: $muted; max-width: 640px; margin: 0 auto 1.25rem; }
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.sectionTitle { font-size: 1.25rem; font-weight: 600; margin: 2rem 0 0.75rem; }
+.bodyText { color: #44535d; line-height: 1.7; }
+.checkList { padding-left: 1.1rem; color: #44535d; line-height: 1.8; }
+
+.card {
+  border: 1px solid $line;
+  border-radius: 16px;
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.cardTitle { font-size: 1.15rem; font-weight: 600; margin-bottom: 1rem; }
+
+.includeRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.45rem 0;
+  font-size: 0.9rem;
+  color: #44535d;
+}
+.includeLabel { color: $muted; }
+.includeIcon { width: 1.2rem; margin-right: 0.5rem; color: $muted; }
+
+.teacher { display: flex; gap: 1rem; align-items: center; }
+.avatar { width: 64px; height: 64px; border-radius: 12px; object-fit: cover; flex-shrink: 0; }
+.teacherName { font-weight: 600; margin: 0; }
+.teacherRole { font-size: 0.8rem; color: $muted; margin: 0 0 0.4rem; }
+.socials a { color: $ink; margin-right: 0.9rem; }
+.teacherBio { font-size: 0.9rem; color: #44535d; margin: 1rem 0 0; }
+
+.chapter { border: 1px solid $line; border-radius: 16px; padding: 1.5rem; margin-bottom: 1.25rem; }
+.chapterTitle { color: #2c6fb3; font-size: 1.15rem; font-weight: 600; margin: 0 0 0.25rem; }
+.chapterMeta { font-size: 0.8rem; color: $muted; margin-bottom: 1rem; }
+.lesson {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  background: $row;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  font-size: 0.92rem;
+}
+.lessonFocus { display: block; font-size: 0.8rem; color: $muted; margin-top: 0.15rem; }
+.lessonWeek { font-size: 0.8rem; color: $muted; white-space: nowrap; }
+
+.planOption {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid $line;
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+}
+.planOption:focus-within { outline: 2px solid $primary; outline-offset: 2px; }
+.planActive { border-color: $primary; background: $tint; }
+.planText { flex: 1; display: flex; flex-direction: column; }
+.planNote { font-size: 0.8rem; color: $muted; }
+.planPrice { font-weight: 700; white-space: nowrap; }
+
+.copyRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  background: $row;
+  border-radius: 10px;
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 0.65rem;
+}
+.copyLabel { font-size: 0.75rem; color: $muted; display: block; }
+.copyValue { font-weight: 600; font-size: 1.05rem; word-break: break-all; }
+.copyBtn { white-space: nowrap; }
+.refRow { background: $tint; border: 1px dashed $primary; }
+
+.honeypot { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+.successWrap { max-width: 560px; margin: 3rem auto; text-align: center; }
+.successIcon { width: 96px; height: 96px; margin-bottom: 1rem; }
+.successCircle {
+  stroke: $success; stroke-width: 4; fill: #e7f6ee;
+  stroke-dasharray: 290; stroke-dashoffset: 290;
+  animation: draw 0.6s ease forwards;
+}
+.successTick {
+  stroke: $success; stroke-width: 6; fill: none; stroke-linecap: round; stroke-linejoin: round;
+  stroke-dasharray: 60; stroke-dashoffset: 60;
+  animation: draw 0.4s ease 0.5s forwards;
+}
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .successCircle, .successTick { animation: none; stroke-dashoffset: 0; }
+}
+
+.stepper { margin-bottom: 1.5rem; }
+.stepLabel { font-size: 0.85rem; color: $muted; margin-bottom: 0.4rem; }
+.question { margin-bottom: 1.5rem; }
+.questionLabel { font-weight: 500; margin-bottom: 0.4rem; display: block; }

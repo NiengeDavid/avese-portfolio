@@ -22,7 +22,7 @@ const basePath = getBasePath();
 console.warn(
   // "Are you publishing to <username>.github.io ? then [basePath] should be empty.\n" +
   // "Are you publishing to <username>.github.io/<repository> ? then [basePath] should be /<repository>.\n" +
-  `P.S. [basePath] is {${basePath}}`
+  `P.S. [basePath] is {${basePath}}`,
 );
 
 const nextConfig = {
@@ -32,12 +32,7 @@ const nextConfig = {
   publicRuntimeConfig: {
     basePath: basePath,
   },
-  env: {
-    WhatsappApi: process.env.WhatsappApi,
-    PAYSTACK_PUBLIC_KEY: process.env.PAYSTACK_PUBLIC_KEY,
-    MAILGUN_API_KEY: process.env.MAILGUN_API_KEY,
-    MAILGUN_DOMAIN: process.env.MAILGUN_DOMAIN,
-  },
+  env: {},
 };
 
 module.exports = nextConfig;

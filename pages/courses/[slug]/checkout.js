@@ -11,6 +11,7 @@ import {
 import CourseTopBar from "../../../components/course/CourseTopBar";
 import CopyButton from "../../../components/course/CopyButton";
 import SuccessCard from "../../../components/course/SuccessCard";
+import { Footer } from "../../../components/Footer";
 import styles from "../../../styles/course.module.scss";
 
 const ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"; // 32 chars, no I/O/0/1
@@ -293,6 +294,8 @@ export default function CheckoutPage({ course }) {
           </div>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }

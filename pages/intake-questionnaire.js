@@ -9,6 +9,7 @@ import {
 } from "../config/intakeQuestionnaire";
 import CourseTopBar from "../components/course/CourseTopBar";
 import SuccessCard from "../components/course/SuccessCard";
+import { footer } from "../components/Footer";
 import styles from "../styles/course.module.scss";
 
 const DRAFT_KEY = "avs-intake-draft";
@@ -260,6 +261,8 @@ export default function IntakeQuestionnaire() {
           </form>
         )}
       </main>
+
+      <footer />
     </div>
   );
 }
